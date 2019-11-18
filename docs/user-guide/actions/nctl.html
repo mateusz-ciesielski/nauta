@@ -1,0 +1,283 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>How to Build the Nauta Command Line Interface &mdash; Nauta 1.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Nauta
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../README.html">Product Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../README.html#nauta-user-guide">Nauta User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../README.html#terms-and-conditions">Terms and Conditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../installation-and-configuration/README.html">Nauta Installation, Configuration, and Administration Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../installation-and-configuration/README.html#nauta-hardware-requirement-overview">Nauta Hardware Requirement Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../installation-and-configuration/README.html#nauta-installation-procedures">Nauta Installation Procedures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../installation-and-configuration/README.html#document-flow">Document Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../installation-and-configuration/README.html#terms-and-conditions">Terms and Conditions</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Nauta</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>How to Build the Nauta Command Line Interface</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/user-guide/actions/nctl.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="how-to-build-the-nauta-command-line-interface">
+<h1>How to Build the Nauta Command Line Interface<a class="headerlink" href="#how-to-build-the-nauta-command-line-interface" title="Permalink to this headline">¶</a></h1>
+<p>Should you decide to build the Nauta Command Line Interface (nctl), then reference this section to build the CLI for Nauta. This section discusses the following main topics:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="#ubuntu-requirements">Ubuntu Requirements</a></p></li>
+<li><p><a class="reference external" href="#macos-high-sierra-requirements">MacOS High Sierra Requirements</a></p></li>
+<li><p><a class="reference external" href="#windows-10-requirements">Windows 10 Requirements</a></p></li>
+<li><p><a class="reference external" href="#nauta-build-requirements">Nauta Build Requirements</a></p></li>
+</ul>
+<div class="section" id="nauta-development-requirements">
+<h2>Nauta Development Requirements<a class="headerlink" href="#nauta-development-requirements" title="Permalink to this headline">¶</a></h2>
+<p>The following Operating System (Ubuntu, macOS, and Windows) are required to build the Nauta CLI.</p>
+</div>
+<div class="section" id="ubuntu-requirements">
+<h2>Ubuntu Requirements<a class="headerlink" href="#ubuntu-requirements" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ubuntu-16-04-lts-and-ubuntu-18-04-lts">
+<h3>Ubuntu 16.04 LTS and Ubuntu 18.04 LTS<a class="headerlink" href="#ubuntu-16-04-lts-and-ubuntu-18-04-lts" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>python 3.6</p></li>
+<li><p>python3.6-dev</p></li>
+<li><p>python3.6-venv</p></li>
+<li><p>build-essential</p></li>
+<li><p>binutils</p></li>
+<li><p>curl</p></li>
+<li><p>git</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">add</span><span class="o">-</span><span class="n">apt</span><span class="o">-</span><span class="n">repository</span> <span class="n">ppa</span><span class="p">:</span><span class="n">deadsnakes</span><span class="o">/</span><span class="n">ppa</span>
+<span class="n">sudo</span> <span class="n">apt</span> <span class="n">update</span> <span class="o">&amp;&amp;</span> <span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">python3</span><span class="o">.</span><span class="mi">6</span> <span class="n">python3</span><span class="o">.</span><span class="mi">6</span><span class="o">-</span><span class="n">dev</span> <span class="n">python3</span><span class="o">.</span><span class="mi">6</span><span class="o">-</span><span class="n">venv</span> <span class="n">build</span><span class="o">-</span><span class="n">essential</span> <span class="n">binutils</span> <span class="n">curl</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="macos-high-sierra-requirements">
+<h2>MacOS High Sierra Requirements<a class="headerlink" href="#macos-high-sierra-requirements" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>python 3.6</p></li>
+<li><p>python3-venv</p></li>
+<li><p>python3-dev</p></li>
+<li><p>binutils</p></li>
+<li><p>make</p></li>
+<li><p>curl</p></li>
+<li><p>git</p></li>
+</ul>
+</div>
+<div class="section" id="windows-10-requirements">
+<h2>Windows 10 Requirements<a class="headerlink" href="#windows-10-requirements" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.python.org/ftp/python/3.6.5/python-3.6.5-amd64.exe">Python 3.6.5 64-bit</a></p></li>
+<li><p><a class="reference external" href="http://gnuwin32.sourceforge.net/packages/make.htm">make</a></p></li>
+<li><p><a class="reference external" href="https://www.7-zip.org/">7-zip</a></p></li>
+<li><p><a class="reference external" href="https://eternallybored.org/misc/wget/">wget</a></p></li>
+<li><p><a class="reference external" href="http://www.msys2.org/">MSYS2</a></p></li>
+<li><p><a class="reference external" href="https://docs.docker.com/docker-for-windows/install/">Docker</a></p></li>
+<li><p><a class="reference external" href="https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk">Windows 10 SDK</a></p></li>
+</ul>
+<p>Ensure that you have these tools (except Windows SDK) available system-wide via command-line (add them to PATH).</p>
+<div class="section" id="proxy-settings">
+<h3>Proxy Settings<a class="headerlink" href="#proxy-settings" title="Permalink to this headline">¶</a></h3>
+<p>Ensure that you have the following settings: <code class="docutils literal notranslate"><span class="pre">http_proxy</span></code>, <code class="docutils literal notranslate"><span class="pre">https_proxy</span></code> and <code class="docutils literal notranslate"><span class="pre">no_proxy</span></code> and environment variables, if you are behind proxy. The <code class="docutils literal notranslate"><span class="pre">no_proxy</span></code> must include: <code class="docutils literal notranslate"><span class="pre">127.0.0.1</span></code> and <code class="docutils literal notranslate"><span class="pre">localhost</span></code>.</p>
+</div>
+</div>
+<div class="section" id="nauta-build-requirements">
+<h2>Nauta Build Requirements<a class="headerlink" href="#nauta-build-requirements" title="Permalink to this headline">¶</a></h2>
+<p>Ensure that the development requirements above are met and in the <code class="docutils literal notranslate"><span class="pre">applications/cli</span></code> directory run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">build</span></code>.
+Artifacts will be available in <code class="docutils literal notranslate"><span class="pre">dist</span></code> directory, including nctl binary.</p>
+<p>Should you need to rebuild nctl after any changes, you can invoke <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">clean</span> <span class="pre">build</span></code> (it cleans only the dist and build directories) or trigger <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">full_clean</span> <span class="pre">build</span></code> to recreate also <em>.venv</em> directory.</p>
+<p>If you want to create <code class="docutils literal notranslate"><span class="pre">tar.gz</span></code> package with nctl, invoke <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">nctl-build</span></code> from main directory in the repository.
+After successful build, the <code class="docutils literal notranslate"><span class="pre">tar.gz</span></code> file can be found in <code class="docutils literal notranslate"><span class="pre">applications/cli</span></code> directory. The Package contains the nctl binary and all dependencies, such as Helm. Also, docs and examples directories will be available.</p>
+<p><strong>Note:</strong> Building Nauta CLI on Windows requires a <code class="docutils literal notranslate"><span class="pre">bash</span></code> console. One possible solution is to install <a class="reference external" href="http://www.mingw.org/wiki/msys">MSYS</a>. If the build process is started from Windows <code class="docutils literal notranslate"><span class="pre">cmd</span></code> console, it fails.</p>
+<div class="section" id="available-make-commands-and-targets">
+<h3>Available make Commands and Targets<a class="headerlink" href="#available-make-commands-and-targets" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">clean</span></code> - Removes build artifacts only</p>
+<p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">full_clean</span></code> - Removes build artifacts and virtual env</p>
+<p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">build</span></code> - Builds cli app</p>
+<p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">venv</span></code> - Creates <em>.venv</em> with all modules required by nctl</p>
+<p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">venv-dev</span></code> - Internal target used by makefiles</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="return-to-start-of-document">
+<h2>Return to Start of Document<a class="headerlink" href="#return-to-start-of-document" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../README.html"><span class="doc">README</span></a></p></li>
+</ul>
+<hr class="docutils" />
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Intel Corporation
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
